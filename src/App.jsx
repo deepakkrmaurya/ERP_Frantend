@@ -22,7 +22,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home/>} /> 
         <Route path="/login" element={<Login/>} /> 
-        <Route path="/daisboard" element={<Daisboard/>}>
+        <Route path="daisboard" element={<Daisboard/>}>
              <Route path='addStudent' element={<AddStudent/>}/>
              <Route path='classes' element={<Classes/>}/>
              <Route path='studentRegistration' element={< StudentRegistatioForm/>}/>

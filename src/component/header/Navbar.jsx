@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className=' flex gap-5 bg-[#8E0000] py-1 px-4 text-white'>
             <NavLink>Home</NavLink>
             <NavLink>About</NavLink>
-            <NavLink to="/daisboard">Admin</NavLink>
+            <NavLink to="daisboard">Admin</NavLink>
             <NavLink to='/login'>Login</NavLink>
             
         </div>
