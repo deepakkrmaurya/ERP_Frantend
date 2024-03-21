@@ -5,14 +5,14 @@ const Header = () => {
     return (
         <div>
 
-            <div className=' bg-white w-full h-screen'>
+            <div className=' bg-white w-full '>
                 <div className=' xl:hidden flex flex-col items-center'>
-                    <div className='  flex items-center justify-center gap-20 p-4'>
+                    <div className='  flex items-center justify-center gap-16 py-2 px-4'>
                         <img className=' h-20' src="azadi75.jpg" alt="" />
                         <img className=' h-20' src="logo.png" alt="" />
                         <img className='h-20' src="sir-apjn.png" alt="" />
                     </div>
-                    <div className=' w-[100%] p-4'>
+                    <div className=' w-[100%] px-4'>
                         <img className=' mx-auto' src="AKTU Logo.png" alt="" />
                         <div className=' flex items-center justify-center gap-5'>
                             <img className=' h-11' src="Facebook.png" alt="" />
@@ -20,8 +20,8 @@ const Header = () => {
                             <img className=' h-11' src="Linkedin.png" alt="" />
                             <img className=' h-11' src="youtube.png" alt="" />
                         </div>
-                        <div className='  w-full text-center font-bold pt-4'>
-                            <input type="text" className=' bg-white border-[#8E0000] outline-none border px-3 w-96 py-1 rounded-full' />
+                        <div className='  w-full text-center font-bold py-2'>
+                            <input type="text" className=' bg-white border-[#8E0000] outline-none border-1 px-3 w-96 py-1 rounded-full' placeholder='Search...' />
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@ const Header = () => {
                                     <img className=' h-11' src="youtube.png" alt="" />
                                 </div>
                                 <div>
-                                    <input type="text" className=' bg-white border-[#8E0000] outline-none border px-3 w-96 py-1 rounded-full mt-2' />
+                                    <input type="text" className=' bg-white border-[#8E0000] outline-none border-1 px-3 w-96 py-1 rounded-full mt-2' placeholder='Search...' />
                                 </div>
                             </div>
                             <div>
