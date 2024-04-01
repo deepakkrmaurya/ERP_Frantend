@@ -39,7 +39,7 @@ const SuperAdminDaisboard = () => {
             <div class="w3-sidebar w3-light-grey w3-card w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left "  id="mySidebar">
                 
 
-                <div class="w3-sidebar w3-bar-block bg-[#86A7FC] w3-card" style={{width:"200px"}}>
+                <div class="w3-sidebar w3-bar-block bg-[#] w3-card" style={{width:"200px"}}>
                 <button class="w3-bar-item w3-button w3-large w3-hide-large " onClick={w3_close}>Close &times;</button>
                 <h1 className=' text-2xl text-center font-semibold'>SuperAdmin</h1>
                     <Link class="w3-bar-item w3-button" to='abc'>Link 1</Link>
@@ -57,8 +57,13 @@ const SuperAdminDaisboard = () => {
                             Manage Course <i class="fa fa-caret-down"></i>
                         </button>
                         <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-                            <Link to='addCourse' class="w3-bar-item w3-button">Add Course</Link>
-                            <Link to='createBranch' class="w3-bar-item w3-button">Add Branch</Link>
+                            <Link to='addCourse' class="w3-bar-item w3-button">Class</Link>
+                            <Link to='add/Year' class="w3-bar-item w3-button">Year</Link>
+                            <Link to='add/Semester' class="w3-bar-item w3-button">Branch</Link>
+                            <Link to='createBranch' class="w3-bar-item w3-button"> Branch</Link>
+                            <Link to='create/session' class="w3-bar-item w3-button"> Session</Link>
+                            <Link to='add/subject' class="w3-bar-item w3-button"> Subject</Link>
+                            <Link to='add/cection' class="w3-bar-item w3-button">Section</Link>
                             <a href="#" class="w3-bar-item w3-button">Link</a>
                         </div>
                     </div>

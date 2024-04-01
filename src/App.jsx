@@ -12,6 +12,11 @@ import Abc from './superAdmin/Abc';
 import NewPassword from './component/home/NewPassword';
 import AddCourse from './superAdmin/AddCourse';
 import CreateBranch from './superAdmin/CreateBranch';
+import Session from './superAdmin/Session';
+import Subjetc from './superAdmin/Subjetc';
+import Section from './superAdmin/Section';
+import Year from './superAdmin/Year';
+import Semester from './superAdmin/Semester';
 
 
 function App() {
@@ -31,6 +36,11 @@ function App() {
           <Route path='abc' element={<Abc/>}/>
           <Route path='addCourse' element={<AddCourse/>}/>
           <Route path='createBranch' element={<CreateBranch/>}/>
+          <Route path='create/session' element={<Session/>}/>
+          <Route path='add/subject' element={<Subjetc/>}/>
+          <Route path='add/cection' element={<Section/>}/>
+          <Route path='add/Year' element={<Year/>}/>
+          <Route path='add/Semester' element={<Semester/>}/>
         </Route>
         <Route path="/studentDaisboard" element={<StudentDaisboard/>} />
         </Routes>

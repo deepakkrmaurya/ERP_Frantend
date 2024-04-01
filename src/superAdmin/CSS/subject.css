@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  width: 100%;
+ 
+  height: auto;
+ 
+  font-size: 16px;
+}
+.subject{
+    width: 29%;
+    float: left;
+    margin-right: 1%;
+    height: auto;
+    border-top: 3px solid #8E0000;
+    box-shadow: 0px 0px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.form-group input{
+    width: 100%;
+    border:1px solid grey ;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px 6px;
+}
+.edit-subject{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: #8E0000;
+}
+.btn{
+    background-color: #8E0000;
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-group{
+    margin-top: 5px;
+}
+
+.subject-list{
+    width: 69%;
+    float: left;
+    height: auto;
+    border-top: 3px solid #8E0000;
+    box-shadow: 0px 0px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 1%;
+    
+}
+
+.subject-type{
+    
+    float: left;
+    display: flex;
+}
+
+.subject-type input{
+    
+   margin-right: 4px;
+   margin-left: 4px;
+}
+
+@media screen and (min-width: 480px) {
+    .container{
+         margin: 0;
+         padding: 0;
+        
+    }
+  }

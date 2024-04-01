@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { CiEdit } from "react-icons/ci";
 import { MdDelete } from "react-icons/md";
 import { addCourse, CourseUpdateById, deleteCourseById, getaddCourse, getCourseById } from '../component/stoer/slice/course.slice'
+import { loadSection } from '../component/stoer/slice/section.slice';
 // http://localhost:5000/api/v1/addcourse
 const AddCourse = () => {
     const [inputcourse, setInputcourse] = useState()
@@ -42,24 +43,31 @@ const AddCourse = () => {
         if(res.payload.success)
         loadingCourse()
     }
+
+    const [loadsection, setloadsection]=useState([])
+    const loadingSection = async()=>{
+        const res = await dispatch(loadSection())
+        setloadsection(res.payload)
+        
+    }
    
     useEffect(() => {
-        loadingCourse()
+        loadingCourse();
+        loadingSection();
     }, [])
 
     return (
         <div>
-            <div className=' w-full border bg-blue-600 py-2 my-2 mx-0 px-0'>
+            <div className=' w-full border bg-blue-600 py-2 rounded my-2 mx-0 px-0'>
                 <h1 className=' text-white px-2'>Add New Course</h1>
             </div>
-            <div className=' w-full border  py-2 my-2 mx-0 px-2'>
+            <div className='  border w-[100%]  py-2 my-2 mx-0 px-2'>
                 <label htmlFor="">Course</label>
-                <input onChange={(e) => { setInputcourse(e.target.value) }} type="text" className=' outline-none border-1 py-1 px-2 ml-2' placeholder=' Enter course name' />
+                <input onChange={(e) => { setInputcourse(e.target.value) }} type="text" className=' outline-none border-1 w-[30%] py-1 px-2 ml-2' placeholder=' Enter course name' />
                 <span onClick={saveCourse} className=' px-3 py-[6px] rounded text-white border-1 ml-1 cursor-pointer bg-green-600'>Save</span>
+                
             </div>
-            {/* model start */}
-
-
+           
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -91,8 +99,7 @@ const AddCourse = () => {
                     </div>
                 </div>
             </div>
-            {/* model end*/}
-            {/* table start */}
+           
             <div class="container mt-3">
 
                 <table class="table table-bordered">
@@ -121,7 +128,7 @@ const AddCourse = () => {
                     </tbody>
                 </table>
             </div>
-            {/* table end */}
+            
         </div>
     )
 }
